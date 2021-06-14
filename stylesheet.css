@@ -62,6 +62,7 @@ margin-right: 50px;
 }
 
 .user_index .navi_menu span a{
+    text-decoration: none;
     margin: auto;
 }
 
