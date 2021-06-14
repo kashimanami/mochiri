@@ -50,7 +50,7 @@ margin-right: 50px;
     margin-bottom: auto;
 }
 
-.user_index .navi_menu li{
+.user_index .navi_menu span{
     list-style: none;
     display: inline-flex;
     margin-right: 20px;
@@ -61,7 +61,7 @@ margin-right: 50px;
 
 }
 
-.user_index .navi_menu li p{
+.user_index .navi_menu span p{
     margin: auto;
 }
 
