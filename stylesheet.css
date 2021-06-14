@@ -172,6 +172,75 @@ a.btn-malformation:hover {
     border-radius: 40% 10% / 50% 40%;
 }
 
+#items .items {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+
+#items .items ul {
+        padding: 0;
+        width: 100vw;
+        display: flex;
+        flex-shrink: 0;
+
+#items .items ul:first-child {
+            animation: slide1 60s -30s linear infinite;
+        }
+
+
+#items .items ul:last-child {
+            animation: slide2 60s linear infinite;
+        }
+
+#items .items li {
+            display: inline-block;
+            width: 100%;
+            min-width: 150px;
+            margin-right: 20px;
+            list-style: none;
+            text-align: center;
+
+#items .items img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+    }
+    
+#items .items img:hover {
+        ul {
+            animation-play-state: paused;
+        }
+    }
+}
+
+@keyframes slide1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+
+
+
 .push {
     height: 40px;
 }
