@@ -173,8 +173,8 @@ a.btn-malformation:hover {
 }
 
 .slider img{
-    width: 200px;
-    height: 200px;
+    max-width: auto;
+    max-height: auto;
 }
 
 
