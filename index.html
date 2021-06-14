@@ -7,18 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
 	<link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 	<title>Mochiri-Cosmetics Store-</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-                auto: true,
-                pause: 5000,
-            });
-        });
-</script>
+	
 
 </head>
 <body class="user_index">
@@ -31,7 +20,32 @@
 			<span><a href="#sale">Sale</a></span>
 			<span><a href="#items">Items</a></span>
 			<span><a href="#contact">Contact</a></span>
-		</ul>
+		</div>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js"></script>
+		<script type="text/javascript">
+  var mySwiper = new Swiper ('.swiper-container', {
+   slidesPerView:1.5,//画像を何枚表示するか
+   spaceBetween: 10,//何ピクセル画像の間隔をあけるか
+   centeredSlides : true,//見切らせたい場合メイン画像をセンターにもってくるか
+   //自動再生する場合
+   autoplay: {
+   delay: 3000, //3秒後に次の画像に代わる
+   },
+   loop: true,//最後の画像までいったらループする
+   //ページネーションをつける場合
+   pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+   },
+   //左右のナビゲーションをつける場合
+   navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+   }
+  });
+</script>
 	</header>
 	<div class="container"  id="top">
 		<aside class="search">
@@ -78,13 +92,17 @@
 			</div>
 			<div id="items">
 				<h2>Items</h2>
-				<div class="slider">
-					<img src="mascara.jpg" style="width:200px; height:200px;">
-					<img src="eyeliner.jpg" style="width:200px; height:200px;">
-					<img src="eyeshadow_palette.jpg" style="width:200px; height:200px;">
-					<img src="eyeblow.jpg" style="width:200px; height:200px;">
-					<img src="rip.jpg" style="width:200px; height:200px;">
-						</div>
+				<div class="slide">
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide"><img src="mascara.jpg"></li>
+							<li class="swiper-slide"><img src="eyeliner.jpg"></li>
+							<li class="swiper-slide"><img src="eyeshadow_palette.jpg"></li>
+							<li class="swiper-slide"><img src="eyeblow.jpg"></li>
+							<li class="swiper-slide"><img src="rip.jpg"></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div id="contact">
 				<h2>Contact</h2>
