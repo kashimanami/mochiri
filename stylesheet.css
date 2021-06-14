@@ -46,6 +46,10 @@ margin-right: 50px;
 
 }
 
+.user_index .navi_area .navi_menu li p{
+    margin: auto;
+}
+
 .user_index .container .search .search_area{
 	padding: 10px;
 	text-align:center;
