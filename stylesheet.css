@@ -174,6 +174,29 @@ a.btn-malformation:hover {
 
 
 
+.swiper-container{ witdh:100%; max-width:650px; }
+	.swiper-slide-next,.swiper-slide-prev{ opacity: 0.5; }
+	.swiper-button-prev::before,.swiper-button-next::before {
+		font-size:32px;
+		color:#fff;
+		font-weight:900;
+	}
+	.swiper-button-prev::before { content: "←"; }
+	.swiper-button-next::before { content: "→"; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .push {
