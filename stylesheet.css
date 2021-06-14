@@ -162,6 +162,9 @@ a.btn-malformation:hover {
   border-radius: 40% 90% / 60% 80%;
 }
 
+.push {
+  height: 30px;
+}
 
 footer{
 text-align: center;
