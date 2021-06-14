@@ -167,15 +167,16 @@ a.btn-malformation:hover {
 }
 
 .push {
-    height: 30px;
+    height: 40px;
 }
 
 footer{
     text-align: center;
     width: 100%;
     height: 30px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
+    background-color: #faeee7;
 }
 
 footer .copyright{
