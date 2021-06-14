@@ -2,7 +2,7 @@
 
 body {
 	background-color: #faeee7;
-	font-family: 'cursive';
+	font-family: cursive;
 }
 
 .user_index .container .site_title{
@@ -43,8 +43,7 @@ margin-right: 50px;
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    display: table-cell;
-    vertical-align: middle;
+
 }
 
 .user_index .container .search .search_area{
