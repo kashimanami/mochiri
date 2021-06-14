@@ -65,6 +65,11 @@ header{
     height: 70px;
 }
 
+.user_index .navi_menu span:hover{
+    background-color: #33272a;
+}
+
+
 .user_index .navi_menu span a{
     text-decoration: none;
     margin: auto;
