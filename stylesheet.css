@@ -64,6 +64,7 @@ margin-right: 50px;
 .user_index .navi_menu span a{
     text-decoration: none;
     margin: auto;
+    color: #001858;
 }
 
 .user_index .container .search .search_area{
