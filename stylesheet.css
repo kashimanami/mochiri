@@ -35,7 +35,7 @@ margin-right: 50px;
         text-align: center;
 }
 
-.user_index .navi_area .navi_menu li{
+.user_index .navi_menu li{
     list-style: none;
     display: inline-flex;
     margin-right: 20px;
@@ -46,7 +46,7 @@ margin-right: 50px;
 
 }
 
-.user_index .navi_area .navi_menu li p{
+.user_index .navi_menu li p{
     margin: auto;
 }
 
