@@ -12,6 +12,7 @@ header{
     background-color: #faeee7;
     width: 100%;
     z-index: 10;
+	top: 0;
 }
 
 .user_index .site_title{
