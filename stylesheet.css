@@ -163,7 +163,7 @@ a.btn-malformation {
 
 a.btn-malformation:hover {
     color: #fff;
-    border-radius: 40% 90% / 60% 80%;
+    border-radius: 40% 10% / 50% 40%;
 }
 
 .push {
