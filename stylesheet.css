@@ -172,7 +172,19 @@ a.btn-malformation:hover {
     border-radius: 40% 10% / 50% 40%;
 }
 
-
+.slide-item{
+  width: 300px;
+  height: 200px;
+  background: #000;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+  
+.slide-item:nth-child(2n){
+    background: #fafafa;
+    color: #222;
+  }
 
 
 
