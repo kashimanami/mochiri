@@ -39,6 +39,12 @@ margin-right: 50px;
     list-style: none;
     display: inline-flex;
     margin-right: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .user_index .container .search .search_area{
