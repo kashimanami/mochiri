@@ -6,32 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
 	<link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<title>Mochiri-Cosmetics Store-</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js"></script>
-		<script type="text/javascript">
-  var mySwiper = new Swiper ('.swiper-container', {
-   slidesPerView:1.5,//画像を何枚表示するか
-   spaceBetween: 10,//何ピクセル画像の間隔をあけるか
-   centeredSlides : true,//見切らせたい場合メイン画像をセンターにもってくるか
-   //自動再生する場合
-   autoplay: {
-   delay: 3000, //3秒後に次の画像に代わる
-   },
-   loop: true,//最後の画像までいったらループする
-   //ページネーションをつける場合
-   pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-   },
-   //左右のナビゲーションをつける場合
-   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-   }
-  });
-</script>
+
+
 	
 </head>
 <body class="user_index">
@@ -64,7 +43,7 @@
 						<option value="rip">Rips</option>
 					</select>
 				</div>
-				 <a href="" class="btn btn-malformation">Search</a>
+				<a href="" class="btn btn-malformation">Search</a>
 			</div>
 			<div class="search_area">
 				<h3 class="title">Search by price</h3>
@@ -76,47 +55,66 @@
 						<option value="4">$30～</option>
 					</select>
 				</div>
-				 <a href="" class="btn btn-malformation">Search</a>
+				<a href="" class="btn btn-malformation">Search</a>
 			</div>
 		</aside>
 
 		<article class="main">
 		<h2 class="title">Welcome to Mochiri</h2>
 			<div class="top_image">
-			<img src="mochiri_top.jpg" >
+				<img src="mochiri_top.jpg" >
 			</div>
 			<div id="sale">
 				<h2>Sale Items</h2>
 				<div class="sale_items">
 					<img src="mascara.jpg" >
+					<div class="sale_introduce">
+						<p>SweetMascara/01.CaramelCookie</br>$13</p>
+					</div>
 				</div>
 			</div>
 			<div id="items">
 				<h2>Items</h2>
 				<div class="slide">
 					<div class="swiper-container">
-						<ul class="swiper-wrapper">
-							<li class="swiper-slide"><img src="mascara.jpg"></li>
-							<li class="swiper-slide"><img src="eyeliner.jpg"></li>
-							<li class="swiper-slide"><img src="eyeshadow_palette.jpg"></li>
-							<li class="swiper-slide"><img src="eyeblow.jpg"></li>
-							<li class="swiper-slide"><img src="rip.jpg"></li>
-						</ul>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="eyeliner.jpg"></div>
+							<div class="swiper-slide"><img src="eyeshadow_palette.jpg"></div>
+							<div class="swiper-slide"><img src="eyeblow.jpg"></div>
+							<div class="swiper-slide"><img src="rip.jpg"></div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
 				</div>
 			</div>
 			<div id="contact">
 				<h2>Contact</h2>
-				<span>Address:〒123-4567,Japan,〇〇</span></br>
+				<span>Address:〒123-4567,Japan,Tokyo</span></br>
 				<span>TEL:123-4567-8910</span>
 			</div>
-		        <div class="push">
+				<div class="push">
 			</div>
 		</article>
 	</div>
 
 	<footer>
-		<small class="copyright"> © 2021 kashimanami</small>
+		<small class="copyright"> Copyright 2021 kashimanami</small>
 	</footer>
+	
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+	</script>
 </body>
 </html>
