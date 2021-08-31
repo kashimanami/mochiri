@@ -76,17 +76,13 @@
 			<div id="items">
 				<h2>Items</h2>
 				<div class="slide">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="eyeliner.jpg"></div>
-							<div class="swiper-slide"><img src="eyeshadow_palette.jpg"></div>
-							<div class="swiper-slide"><img src="eyeblow.jpg"></div>
-							<div class="swiper-slide"><img src="rip.jpg"></div>
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
+					<ul class="slider">
+						<li><img src="eyeshadow.jpg"><p class="caption">For readable code</p></li>
+						<li><img src="eyeblow.jpg"><p class="caption">For understanding how to use Docker</p></li>
+						<li><img src="mascara.jpg"><p class="caption">For get FE</p></li>
+						<li><img src="cheek.jpg"><p class="caption">For how to write SQL</p></li>
+						<li><img src="eyeliner.jpg"><p class="caption">For social relationship</p></li>
+					</ul>
 				</div>
 			</div>
 			<div id="contact">
@@ -104,16 +100,12 @@
 	</footer>
 	
 	<script>
-		var swiper = new Swiper('.swiper-container', {
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			loop: true,
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
+		$(function(){
+			$('.slider').not('.slick-initialized').slick({
+				dots:true,
+				autoplay: false,
+				autoplaySpeed: 3000,
+			});
 		});
 	</script>
 </body>
