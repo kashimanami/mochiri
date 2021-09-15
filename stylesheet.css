@@ -234,6 +234,15 @@ img{
 	padding: 50px!important;
 }
 
+/* contact */
+i{
+	color: #fffffe;
+	margin: 10px;
+}
+
+i:hover{
+	color: #b8c1ec;
+}
 
 /* footer */
 .push {
